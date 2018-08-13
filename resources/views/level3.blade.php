@@ -4,13 +4,13 @@
     <div class="container">
         <div class="row" style="margin-bottom: 30px;">
             <div class="col-md-8 col-md-offset-2">
-                <h2>Level 2</h2>
+                <h2>Level 3</h2>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <form action="/requestlevel3" method="GET">
+                <form action="/requestlevel4" method="GET">
                     <div class="form-group">
                         <label for="flag">Flag</label>
                         <input type="text" class="form-control" id="flag" name="flag" required>

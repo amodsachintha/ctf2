@@ -14,9 +14,10 @@
 
 
 
-Route::get('/', 'LevelController@requestlevel0');
+Route::get('/requestlevel0', 'LevelController@requestlevel0');
 Route::get('/requestlevel1', 'LevelController@requestlevel1');
 Route::get('/requestlevel2', 'LevelController@requestlevel2');
+Route::get('/requestlevel3', 'LevelController@requestlevel3');
 
 
 
@@ -25,4 +26,5 @@ Route::get('/requestlevel2', 'LevelController@requestlevel2');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
