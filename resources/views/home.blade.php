@@ -34,10 +34,10 @@
                         <a href="/requestlevel2?flag=43d3810c065f4bf3550fac648d605fcb" class="btn btn-default">Level 2</a>
                     @endif
                     @if(session('level3') == true)
-                        <a href="/requestlevel3?flag=abcd" class="btn btn-default">Level 3</a>
+                        <a href="/requestlevel3?flag=methamphetamine" class="btn btn-default">Level 3</a>
                     @endif
                     @if(session('level4') == true)
-                        <a href="/requestlevel4?flag=abcd" class="btn btn-default">Level 4</a>
+                        <a href="/requestlevel4?flag=3b8c01e31ca528f12eabc86712b4e6f4" class="btn btn-default">Level 4</a>
                     @endif
                 </div>
             </div>

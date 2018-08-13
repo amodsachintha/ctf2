@@ -36,7 +36,7 @@ class LevelController extends Controller
 
     private function level4()
     {
-        return response()->json(['todo'=>'Make level 4']);
+        return view('level4');
     }
 
     // VALIDATION CODE //
