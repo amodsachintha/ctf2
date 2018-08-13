@@ -34,6 +34,11 @@ class LevelController extends Controller
         return view('level3');
     }
 
+    private function level4()
+    {
+        return response()->json(['todo'=>'Make level 4']);
+    }
+
     // VALIDATION CODE //
 
     public function requestlevel0(Request $request)
@@ -67,14 +72,25 @@ class LevelController extends Controller
     public function requestlevel3(Request $request)
     {
         $flag = $request->get('flag');
-        if ($flag == "abcd") {
+        if ($flag == "methamphetamine") {
             session(['level3' => true]);
             return $this->level3();
 
         } else {
             return back()->withErrors(['err' => 'Flag incorrect!']);
         }
+    }
 
+    public function requestlevel4(Request $request)
+    {
+        $flag = $request->get('flag');
+        if ($flag == "3b8c01e31ca528f12eabc86712b4e6f4") {
+            session(['level4' => true]);
+            return $this->level4();
+
+        } else {
+            return back()->withErrors(['err' => 'Flag incorrect!']);
+        }
     }
 
 

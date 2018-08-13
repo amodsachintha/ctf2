@@ -8,6 +8,12 @@
             </div>
         </div>
 
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-6 col-md-offset-3">
+                <img src="{{asset('img/saymyname.jpg')}}">
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <form action="/requestlevel1" method="GET">
@@ -18,8 +24,10 @@
                     <input type="submit" value="Submit" class="btn btn-primary">
                 </form>
             </div>
-            {{--Flag--}}
-            {{--ZmM4ODQzYWM4YTVhZGZlY2JjNjRhZTI4ZTZhMzQzYjQ=--}}
+            <div class="hidden">
+                Flag: ZmM4ODQzYWM4YTVhZGZlY2JjNjRhZTI4ZTZhMzQzYjQ=
+            </div>
+
         </div>
     </div>
 

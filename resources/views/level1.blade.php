@@ -8,6 +8,12 @@
             </div>
         </div>
 
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-6 col-md-offset-3">
+                <img src="{{asset('img/cookie.jpg')}}" width="75%">
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <form action="/requestlevel2" method="GET">

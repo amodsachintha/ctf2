@@ -8,6 +8,12 @@
             </div>
         </div>
 
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-6 col-md-offset-3">
+                <img src="{{asset('img/heisenberg.png')}}">
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <form action="/requestlevel3" method="GET">
