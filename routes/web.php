@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::get('/', 'LevelController@requestlevel0');
+Route::get('/requestlevel1', 'LevelController@requestlevel1');
+Route::get('/requestlevel2', 'LevelController@requestlevel2');
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
