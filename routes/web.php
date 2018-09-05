@@ -19,10 +19,12 @@ Route::get('/requestlevel1', 'LevelController@requestlevel1');
 Route::get('/requestlevel2', 'LevelController@requestlevel2');
 Route::get('/requestlevel3', 'LevelController@requestlevel3');
 Route::get('/requestlevel4', 'LevelController@requestlevel4');
+Route::get('/requestlevel5', 'LevelController@requestlevel5');
+Route::get('/requestlevel6', 'LevelController@requestlevel6');
 
 
 
-
+Route::get('/rest', 'LevelController@rest');
 
 Auth::routes();
 

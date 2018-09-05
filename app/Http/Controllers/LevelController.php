@@ -11,6 +11,27 @@ class LevelController extends Controller
         $this->middleware('auth');
     }
 
+    // REST //
+
+    public function rest(Request $request)
+    {
+        $user_agent = $request->headers->get('User-Agent');
+        if ($user_agent == "AppleTV6,2/11.1") {
+            return response()->json([
+                'tvOS' => 'Undetected',
+                'status' => 'ok',
+                'flag' => 'df084d2b5bb2e07e3f7e3f4a5d996582'
+            ]);
+        } else {
+            return response()->json([
+                'tvOS' => 'Undetected',
+                'status' => 'User-Agent Mismatch',
+                'flag' => 'null'
+            ]);
+        }
+    }
+
+
     // RETURN VIEWS //
 
     private function level0()
@@ -37,6 +58,16 @@ class LevelController extends Controller
     private function level4()
     {
         return view('level4');
+    }
+
+    private function level5()
+    {
+        return view('level5');
+    }
+
+    private function level6()
+    {
+        return view('level6');
     }
 
     // VALIDATION CODE //
@@ -91,6 +122,31 @@ class LevelController extends Controller
         } else {
             return back()->withErrors(['err' => 'Flag incorrect!']);
         }
+    }
+
+    public function requestlevel5(Request $request)  //PCAP: http.request.method contains "POST"
+    {
+        $flag = $request->get('flag');
+        if ($flag == "36e1a5072c78359066ed7715f5ff3da8") {
+            session(['level5' => true]);
+            return $this->level5();
+
+        } else {
+            return back()->withErrors(['err' => 'Flag incorrect!']);
+        }
+    }
+
+    public function requestlevel6(Request $request)
+    {
+        $flag = $request->get('flag');
+        if ($flag == "df084d2b5bb2e07e3f7e3f4a5d996582") {
+            session(['level6' => true]);
+            return $this->level6();
+
+        } else {
+            return back()->withErrors(['err' => 'Flag incorrect!']);
+        }
+
     }
 
 
