@@ -70,6 +70,12 @@ class LevelController extends Controller
         return view('level6');
     }
 
+    private function level7()
+    {
+        return view('level7');
+    }
+
+
     // VALIDATION CODE //
 
     public function requestlevel0(Request $request)
@@ -146,8 +152,20 @@ class LevelController extends Controller
         } else {
             return back()->withErrors(['err' => 'Flag incorrect!']);
         }
-
     }
+
+    public function requestlevel7(Request $request)
+    {
+        $flag = $request->get('flag');
+        if ($flag == "add14b6fc2dd00cec7d0db61dde4f488") {
+            session(['level7' => true]);
+            return $this->level7();
+
+        } else {
+            return back()->withErrors(['err' => 'Flag incorrect!']);
+        }
+    }
+
 
 
 }

@@ -21,7 +21,7 @@ Route::get('/requestlevel3', 'LevelController@requestlevel3');
 Route::get('/requestlevel4', 'LevelController@requestlevel4');
 Route::get('/requestlevel5', 'LevelController@requestlevel5');
 Route::get('/requestlevel6', 'LevelController@requestlevel6');
-
+Route::get('/requestlevel7', 'LevelController@requestlevel7');
 
 
 Route::get('/rest', 'LevelController@rest');

@@ -45,7 +45,9 @@
                     @if(session('level6') == true)
                         <a href="/requestlevel6?flag=df084d2b5bb2e07e3f7e3f4a5d996582" class="btn btn-default">Level 6</a>
                     @endif
-
+                    @if(session('level7') == true)
+                        <a href="/requestlevel7?flag=add14b6fc2dd00cec7d0db61dde4f488" class="btn btn-default">Level 7</a>
+                    @endif
                 </div>
             </div>
         </div>
