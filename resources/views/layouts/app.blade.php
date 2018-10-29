@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #001406; color: white">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
